@@ -14,9 +14,11 @@ function App() {
   return (
     <div className="App">
       <h2> Total users : {users.length} </h2>
-      {/* <ul>
-        users.map( user => <li key={user.id} > User Name : {user.name} </li> )
-      </ul> */}
+      <ul>
+        {
+          users.map(user => <li key={user.id} > user Name:{user.name},  user age: {user.age}, user phone : {user.phone}  </li>)
+        }
+      </ul>
     </div>
   );
 }
